@@ -42,7 +42,7 @@ print(text)
 ## 评分流程
 
 1. 从国服回放 CDN 下载指定回放。
-2. 使用内置的 AstralParty_Dex 模块解析四名玩家及逐回合数据。
+2. 解析四名玩家及逐回合数据。
 3. 整理伤害、转账、治疗、移动、承伤和死亡等评分字段。
 4. 将各指标转换为同角色冻结参考分布上的中点秩百分位。
 5. 按角色 JSON 中的 v0.2 权重计算 `raw_score`。
@@ -66,3 +66,7 @@ astral-score-scales/
 ```
 
 不包含训练实验、历史回放 CSV、旧版模型、机器人部署文件或任何用户登录数据。解析器来源及 MIT 许可见 `THIRD_PARTY_NOTICES.md`。
+
+## 致谢
+
+感谢 [AstralParty_Dex（星趴档案）](https://github.com/ZtyanCrany/AstralParty_Dex) 项目提供的开源回放解析实现，为本项目的回放解析功能提供了重要基础。
