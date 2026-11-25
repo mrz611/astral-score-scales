@@ -1,0 +1,22 @@
+{
+  "score_version": "palunan_82017_d3_v0.2",
+  "hero_id": 101,
+  "hero_name": "帕露南",
+  "map_id": 82017,
+  "difficulty": 3,
+  "role": "SUP",
+  "reference_n": 13974,
+  "reference_uids": 8053,
+  "formula": {
+    "transfer_rate": 0.17239673063002045,
+    "transfer_rate_7": 0.1260151917386042,
+    "negative_inj_rate_percentile": 0.18185306493983183,
+    "death_component": 0.5197350126915435
+  },
+  "death_transform": "clip(1 - died / 3, 0, 1)",
+  "interpretation": "本局超过该角色参考样本中相应比例的可比对局；不是玩家稳定实力百分位。",
+  "reference_file": "palunan_score_reference_v0_2.npz",
+  "version": "v0.2",
+  "base_version": "v0.1",
+  "weight_update": "speed_trained_win_auc_reviewed"
+}
